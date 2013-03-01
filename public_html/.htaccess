@@ -1,0 +1,20 @@
+# add working content type
+AddType 'text/html; charset=UTF-8' html
+
+# Set caching on favico.ico files for 11 months
+# for more image formats:
+# <filesMatch "\.(ico|gif|jpg|png)$">
+<IfModule mod_expires.c>
+    <filesMatch "\.(ico)$">
+        ExpiresActive On
+        ExpiresDefault "access plus 2 month"
+    </filesMatch>
+</IfModule>
+
+# remove .html extension
+<IfModule mod_rewrite.c>
+    RewriteEngine on
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME}\.html -f
+    RewriteRule ^(.*)$ $1.html
+</IfModule>
