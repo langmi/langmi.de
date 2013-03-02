@@ -1,13 +1,15 @@
 # add working content type
 AddType 'text/html; charset=UTF-8' html
 
+# add expires header
+# site is pretty static, 1 month should be fine
 # Set caching on favico.ico files for 11 months
 # for more image formats:
 # <filesMatch "\.(ico|gif|jpg|png)$">
 <IfModule mod_expires.c>
-    <filesMatch "\.(ico)$">
-        ExpiresActive On
-        ExpiresDefault "access plus 2 month"
+    <filesMatch "\.(css|ico|png|svg)$">
+        ExpiresActive on
+        ExpiresDefault "access plus 10 years"
     </filesMatch>
 </IfModule>
 
