@@ -59,19 +59,12 @@ body > blockquote {
 }
 footer[role="contentinfo"]>p:nth-child(1) {
     margin-top: 3rem;
-    height: 3rem;
 }
 footer[role="contentinfo"]>p:nth-child(1) a:hover {
     background-color: transparent;
 }
 footer[role="contentinfo"]>p:nth-child(2) a:hover {
     background-color: transparent;
-}
-footer[role="contentinfo"]>p:nth-child(1) img {
-    max-height: 3rem;
-}
-footer[role="contentinfo"]>p:nth-child(2) {
-    margin-top: .375rem;
 }
 @media screen {
     body {
