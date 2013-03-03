@@ -47,12 +47,6 @@ h1 {
     line-height: 1.5;
     font-weight: normal;
 }
-header[role="banner"] p {
-    font-size: 1.5rem;
-    line-height: 1.5;
-    font-style: italic;
-    margin-top: 1.5rem;
-}
 body > p {
     font-size: 1.3rem;
     font-style: italic;
